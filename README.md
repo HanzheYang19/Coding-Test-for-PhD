@@ -66,7 +66,7 @@ The best estimation is obtained based on:
 
 ####  Reproduction of Figure 2
 As shown below, PD-LMC achieves a more accurate mean estimation and the samples are more similar to the Rejection than Projected LMC.
-![PD-LMC Samples](#samples.png)
+![PD-LMC Samples](#./samples.png)
 
 ---
 
