@@ -66,7 +66,7 @@ The best estimation is obtained based on:
 
 ####  Reproduction of Figure 2
 As shown below, PD-LMC achieves a more accurate mean estimation and the samples are more similar to the Rejection than Projected LMC.
-![PD-LMC Samples](#./samples.png)
+![PD-LMC Samples](./samples.png)
 
 ---
 
@@ -81,25 +81,25 @@ I wrote the code for PGD and FGSM attacks based on the paper's descriptions befo
 I experimented with five settings with the following details (other hyperparameters are as in the original paper):
 
 1. **KL divergence** for `l_pert` and `l_ro`, **Cross Entropy** for `l_nom`, typical normalization for CIFAR-10.
-![Training Curve](#trainingcurve1.png)
+![Training Curve](./trainingcurve1.png)
 Clean acc: appro. '0.75'
 FGSM acc: appro. '0.53'
 PGD20 acc: appro. '0.27'
 
 2. Cost function from source for `l_pert`, CE for `l_ro` and `l_nom`,  used full source transforms.
-![Training Curve](#trainingcurve2.png)
+![Training Curve](./trainingcurve2.png)
 Clean acc: appro. '0.87'
 FGSM acc: appro. '0.53'
 PGD20 acc: appro. '0.005'
 
 3. KL divergence for `l_pert` and `l_ro`, CE for `l_nom`, step size for `v` set to `5e-3` due to slow learning (however, this did not work), used full source transforms..
-![Training Curve](#trainingcurve2.png)
+![Training Curve](./trainingcurve2.png)
 Clean acc: '0.8825'
 FGSM acc: '0.5571'
 PGD20 acc: '0.0057'
 
 4. Same as 3, but step size for `v` tuned to `1e-3`, used full source transforms..
-![Training Curve](#trainingcurve5.png)
+![Training Curve](./trainingcurve5.png)
 Clean acc: '0.8810'
 FGSM acc: '0.5497'
 PGD20 acc: '0.0055'
