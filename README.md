@@ -112,9 +112,9 @@ Analysis:
 Improvements and further tuning:
 - 1, KL divergence for `l_pert` and `l_ro`, CE for `l_nom`, Source transforms, plus additional normalization (as in Result 1).
 - 2, The reason behind the cureve of 'v' is still unclear, Possible directions for further investigation:
--- Additional tuning of the step size for updating v,
--- Check whether there is any misunderstanding for me in the implementation of the update of 'v',
--- It's may because of the hardware differences that have influenced learning behavior.
+- - Additional tuning of the step size for updating v,
+- - Check whether there is any misunderstanding for me in the implementation of the update of 'v',
+- - It's may because of the hardware differences that have influenced learning behavior.
 
 x. Cost function from source for `l_pert`, CE for `l_ro` and `l_nom`, updated `v` per batch iteration (SEEMED to be same as source), used full source transforms.
 ![Training Curve](./trainingcurvex.png)
