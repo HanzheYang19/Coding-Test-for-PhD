@@ -5,12 +5,7 @@ This project contains the reproduction of two papers:
 
 ### 1. Constrained Sampling with Primal-Dual Langevin Monte Carlo
 **Citation**:
-@InProceedings{Chamon24c,
-author = "Chamon, L. F. O. and Jaghargh, M. R. K. and Korba, A.",
-title = "Constrained sampling with primal-dual {L}angevin {M}onte {C}arlo",
-booktitle = "Conference on Neural Information Processing Systems (NeurIPS)",
-year = "2024",
-}
+<pre><code class="language-bibtex">```bibtex @InProceedings{Chamon24c, author = "Chamon, L. F. O. and Jaghargh, M. R. K. and Korba, A.", title = "Constrained sampling with primal-dual {L}angevin {M}onte {C}arlo", booktitle = "Conference on Neural Information Processing Systems (NeurIPS)", year = "2024", } ```</code></pre>
 
 ### 2. Adversarial Robustness with Semi-Infinite Constrained Learning
 **Citation**:
