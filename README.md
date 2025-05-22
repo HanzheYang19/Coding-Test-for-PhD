@@ -33,8 +33,8 @@ year={2021}
 Despite the differences, I tried to analyze the results and find out what triggered the results. Also, since there were other people using the same device, some results might not be successfully saved, thus I might use some screenshot and some approximation results.
 
 Additionally, I implemented all code using Functions rather than Classes for personal convenience. While the original source code of the second paper is written using Classes, I did not need to reproduce other baseline methods and thus decided not to use Classes (if I need to compare then I'll consider a code structure similar to the source code, i.e., using Classes).
-
 Moreover, I wrote .ipynb files rather than .py files for a better visualization.
+
 ---
 
 ## Result Report
