@@ -10,10 +10,12 @@ This project contains the reproduction of two papers:
   author = "Chamon, L. F. O. and Jaghargh, M. R. K. and Korba, A.", 
   title = "Constrained sampling with primal-dual {L}angevin {M}onte {C}arlo", 
   booktitle = "Conference on Neural Information Processing Systems (NeurIPS)", 
-  year = "2024", } </code></pre>
+  year = "2024", 
+  } </code></pre>
 
 ### 2. Adversarial Robustness with Semi-Infinite Constrained Learning
 **Citation**:
+<pre><code class="language-bibtex">
 @article{robey2021adversarial,
 title={Adversarial robustness with semi-infinite constrained learning},
 author={Robey, Alexander and Chamon, Luiz and Pappas, George J and Hassani, Hamed and Ribeiro, Alejandro},
@@ -21,7 +23,7 @@ journal={Advances in Neural Information Processing Systems},
 volume={34},
 pages={6198--6215},
 year={2021}
-}
+}</code></pre>
 
 
 ---
