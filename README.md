@@ -82,46 +82,48 @@ I experimented with five settings with the following details (other hyperparamet
 
 1. **KL divergence** for `l_pert` and `l_ro`, **Cross Entropy** for `l_nom`, typical normalization for CIFAR-10.
 ![Training Curve](./trainingcurve1.png)
-Clean acc: appro. '0.75'
-FGSM acc: appro. '0.53'
-PGD20 acc: appro. '0.27'
+-Clean acc: appro. '0.75'
+-FGSM acc: appro. '0.53'
+-PGD20 acc: appro. '0.27'
 
 2. Cost function from source for `l_pert`, CE for `l_ro` and `l_nom`,  used full source transforms.
 ![Training Curve](./trainingcurve2.png)
-Clean acc: appro. '0.87'
-FGSM acc: appro. '0.53'
-PGD20 acc: appro. '0.005'
+-Clean acc: appro. '0.87'
+-FGSM acc: appro. '0.53'
+-PGD20 acc: appro. '0.005'
 
 3. KL divergence for `l_pert` and `l_ro`, CE for `l_nom`, step size for `v` set to `5e-3` due to slow learning (however, this did not work), used full source transforms..
 ![Training Curve](./trainingcurve2.png)
-Clean acc: '0.8825'
-FGSM acc: '0.5571'
-PGD20 acc: '0.0057'
+-Clean acc: '0.8825'
+-FGSM acc: '0.5571'
+-PGD20 acc: '0.0057'
 
 4. Same as 3, but step size for `v` tuned to `1e-3`, used full source transforms..
 ![Training Curve](./trainingcurve5.png)
-Clean acc: '0.8810'
-FGSM acc: '0.5497'
-PGD20 acc: '0.0055'
+-Clean acc: '0.8810'
+-FGSM acc: '0.5497'
+-PGD20 acc: '0.0055'
 
 Analysis:
-Compare 4 with 1, the poor learning curve of PGD20 accuracy in Setting 4—despite relatively better curves for Clean and FGSM accuracy—appears to be influenced by the choice of data transforms.
-Compare 4 with 3, the behavior of the v curve in Setting 4, which differs from the original figure in the paper, does not seem to be explained by the step size of v.
-Compare 4 with 2, the choice of KL divergence seems to be better than CE for 'l_ro'.
+-Compare 4 with 1, the poor learning curve of PGD20 accuracy in Setting 4—despite relatively better curves for Clean and FGSM accuracy—appears to be influenced by the choice of data transforms.
+-Compare 4 with 3, the behavior of the v curve in Setting 4, which differs from the original figure in the paper, does not seem to be explained by the step size of v.
+-Compare 4 with 2, the choice of KL divergence seems to be better than CE for 'l_ro'.
 
 Improvements and further tuning:
-1, KL divergence for `l_pert` and `l_ro`, CE for `l_nom`, Source transforms, plus additional normalization (as in Result 1).
-2, The reason behind the cureve of 'v' is still unclear, Possible directions for further investigation:
--Additional tuning of the step size for updating v,
--Check whether there is any misunderstanding for me in the implementation of the update of 'v',
--It's may because of the hardware differences that have influenced learning behavior.
+-1, KL divergence for `l_pert` and `l_ro`, CE for `l_nom`, Source transforms, plus additional normalization (as in Result 1).
+-2, The reason behind the cureve of 'v' is still unclear, Possible directions for further investigation:
+--Additional tuning of the step size for updating v,
+--Check whether there is any misunderstanding for me in the implementation of the update of 'v',
+--It's may because of the hardware differences that have influenced learning behavior.
 
 x. Cost function from source for `l_pert`, CE for `l_ro` and `l_nom`, updated `v` per batch iteration (SEEMED to be same as source), used full source transforms.
 ![Training Curve](#trainingcurvex.png)
-Clean acc:  '0.10'
-FGSM acc:  '0.10'
-PGD20 acc:  '0.10'
+-Clean acc:  '0.10'
+-FGSM acc:  '0.10'
+-PGD20 acc:  '0.10'
+
 Well... at least all the accuracies are equally terrible. Consistency is key, right? :P
+
 ---
 
 ## Repository Structure
